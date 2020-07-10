@@ -1,0 +1,61 @@
+css3总结：常用
+    伪类选择器（属性选择性） :nth-child()  类名:nth-of-type() 
+    补充：伪类元素   ::after   ::before  伪类元素不属于真正的DOM树，是在原来的元素上进行了扩展
+
+    border边框:常用
+        内边框、外边框、图片作为边框
+        圆角、阴影
+    
+    背景：
+        填充（只占内容、占内边距）
+        background-size:100% 100%;
+        可以设置多背景
+    
+    弹性盒flex-box：常用（大量使用）尽量避免使用浮动（float:left;）
+        主轴、排列方式、是否居中，是否转行
+
+    多列布局column & 弹性布局：面试题比较多
+        column-count:3;几列                                                                                                                                                                                                                                                                                                                                                   
+        column-width:100px;列宽
+        column-rule:10px;分割线
+
+    过度、动画、平移：常用
+        transitions:属性 时间 延迟 运动方式; 过度
+        transforms:旋转、拉伸、偏移（平移）、伸缩
+        animations:动画名 时间 动画函数 是否循环 是否延迟 是否反向播放; 动画
+
+        animations一般和关键帧（@keyframes）配合使用
+
+        @keyframes 动画名{
+            0%{
+
+            }
+            20%{
+
+            }
+        }
+
+    媒体查询@media：常用
+        @media:根据不同的设备大小（指代物理像素）
+        连字符：not and or 
+        @media screen and (max-width:1200px;){}
+
+        bootstrap的实现原理就是媒体查询和12栅格系统
+        12栅格系统：把一个设备屏幕分为了12等份
+
+    背景图设置：
+        filter:滤镜
+
+
+sass:css的预编译语言，大量使用
+    sass是基于ruby语言
+    sass变量命名 $
+    less变量命名 @   
+        嵌套
+        混合器
+        变量
+        继承
+        函数
+        循环
+        判断
+        引入（交互）
